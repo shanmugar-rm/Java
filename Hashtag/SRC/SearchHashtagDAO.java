@@ -1,4 +1,4 @@
-package se.lab1.pkg;
+package se.src.pkg;
 //searchhashtagdao where all the database stuffs are done
 import java.sql.*;
 import java.util.ArrayList;
