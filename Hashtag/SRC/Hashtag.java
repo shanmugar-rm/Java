@@ -1,4 +1,4 @@
-package se.lab1.pkg;
+package se.src.pkg;
 
 //hashtag model - kept only hashtag as date is calculated as current date
 public class Hashtag {
