@@ -1,4 +1,4 @@
-package se.lab1.pkg;
+package se.src.pkg;
 //hashtagfeed model class
 import java.util.ArrayList;
 
