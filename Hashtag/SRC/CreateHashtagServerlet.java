@@ -1,4 +1,4 @@
-package se.lab1.pkg;
+package se.src.pkg;
 
 import java.io.IOException;
 import java.util.ArrayList;
