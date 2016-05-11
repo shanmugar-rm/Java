@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>LabAssignment1</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>SearchHashtagServlet</display-name>
+    <servlet-name>SearchHashtagServlet</servlet-name>
+    <servlet-class>se.lab1.pkg.SearchHashtagServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchHashtagServlet</servlet-name>
+    <url-pattern>/SearchHashtagServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateHashtagServerlet</display-name>
+    <servlet-name>CreateHashtagServerlet</servlet-name>
+    <servlet-class>se.lab1.pkg.CreateHashtagServerlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateHashtagServerlet</servlet-name>
+    <url-pattern>/CreateHashtagServerlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewHashtagServlet</display-name>
+    <servlet-name>ViewHashtagServlet</servlet-name>
+    <servlet-class>se.lab1.pkg.ViewHashtagServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewHashtagServlet</servlet-name>
+    <url-pattern>/ViewHashtagServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
