@@ -1,6 +1,5 @@
 package se.bank.src;
 
-
 import java.util.Random;
 
 public class OTP {
