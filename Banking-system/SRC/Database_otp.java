@@ -44,7 +44,6 @@ public class Database_otp {
 		
 		String obj2 = String.valueOf(num);
 
-		//String Email = "jadhavashish41@yahoo.in";
 		String sql = "INSERT INTO otp (loginid,email,otp) VALUES (?,?,?);";
 
 		PreparedStatement stmt = conn.prepareStatement(sql);
@@ -56,9 +55,9 @@ public class Database_otp {
 		Integer rs = stmt.executeUpdate();
 
 		if (rs != 0) {
-			// message = "Updated successfully";
+			
 		} else {
-			// message = "Updatation failed";
+			
 		}
 
 		stmt.close();
@@ -66,8 +65,6 @@ public class Database_otp {
 	}
 
 	public boolean search(int num,String email,String username, Connection conn) throws SQLException {
-
-		//String email = "jadhavashish41@yahoo.in";
 		int otp = 0;
 		String sql = "select * from `otp` where email=? and loginid=?;";
 
@@ -75,7 +72,6 @@ public class Database_otp {
 
 		stmt.setString(1, email);
 		stmt.setString(2, username);
-		// stmt.setInt(2, num);
 
 		ResultSet rs = stmt.executeQuery();
 
@@ -85,12 +81,8 @@ public class Database_otp {
 		}
 
 		stmt.close();
-		System.out.println("OTP is");
-		System.out.println(otp);
 		String obj2 = String.valueOf(num);
-		// System.out.println("hashCode for an integer is " + obj1.hashCode());
-		//System.out.println("hashCode for a string is " + obj2.hashCode());
-
+		
 		if (otp == num) {
 			return true;
 		} else {
@@ -101,13 +93,7 @@ public class Database_otp {
 
 	public void remove(int otp,String email,String username, Connection conn) throws SQLException {
 
-		//String email = "jadhavashish41@yahoo.in";
-		// int otp = 0;
-		//String sql = "UPDATE otp SET otp = ? where email = ? and loginid = ?;";
 		String sql = "delete from `otp` where email=? and loginid=?;";
-		//UPDATE Customers
-		//SET ContactName='Alfred Schmidt', City='Hamburg'
-		//		WHERE CustomerName='Alfreds Futterkiste';
 		PreparedStatement stmt = conn.prepareStatement(sql);
 
 		//stmt.setInt(1, otp);
