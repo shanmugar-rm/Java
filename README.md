@@ -1,4 +1,4 @@
-All academic Java Projects:
+All Academic Java Projects:
 
 Banking System :
 
