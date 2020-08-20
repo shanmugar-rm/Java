@@ -1,4 +1,4 @@
-All Java Projects I did
+All academic Java Projects I did
 
 
 Banking System :
